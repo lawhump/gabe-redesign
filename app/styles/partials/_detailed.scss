@@ -1,0 +1,33 @@
+.tidbits-wrapper {
+  @include article(3);
+}
+
+.tidbits {
+  margin: 6vh auto 0 auto;
+  max-width: $max-width;
+  width: 80%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-top: $margin-top;
+  margin-bottom: $margin-top;
+}
+
+.overview,
+.description {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.overview {
+  width: 35%;
+  vertical-align: top;
+}
+
+.description {
+  width: 60%;
+}

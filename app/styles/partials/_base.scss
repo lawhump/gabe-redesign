@@ -1,0 +1,99 @@
+@include font-face-SF(Thin, 200);
+@include font-face-SF(Light, 300);
+@include font-face-SF(Regular, 400);
+@include font-face-SF(Medium, 500);
+@include font-face-SF(Semibold, 600);
+
+html { font-size: 62.5%; }
+body {
+  background-color: #f5f5f5;
+  color: $font-color-primary;
+  font-family: 'SF', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.56rem;
+  overflow: hidden;
+	text-rendering: optimizeLegibility;
+}
+
+html, body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  font-weight: $font-weight-medium;
+  letter-spacing: .1rem;
+}
+
+h2 {
+  font-weight: $font-weight-regular;
+}
+
+h3 {
+  color: $font-color-secondary;
+  font-weight: $font-weight-medium;
+}
+
+h4 {
+  font-weight: $font-weight-regular;
+}
+
+h6 {
+  font-weight: $font-weight-light;
+}
+
+p {
+  font-weight: $font-weight-light;
+}
+
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  margin-left: .2rem;
+}
+
+article {
+  background-color: #f5f5f5;
+  height: 100vh;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  transition: -webkit-transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transition: transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  width: 100vw;
+}
+
+ul {
+	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border-top: .1rem solid rgba(155,155,155,.6);
+  margin: 8rem 0 7rem 0;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 80%;
+}
+
+.header-link {
+  color: $font-color-secondary;
+  text-decoration: none;
+}

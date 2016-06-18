@@ -1,0 +1,36 @@
+.landing-wrapper {
+  @include article(1);
+}
+
+.landing {
+  margin: 4vh auto 0 3vw;
+  width: 80%;
+}
+
+.about {
+  margin-top: $margin-top;
+}
+
+.projects-links {
+  margin-top: $margin-top;
+
+  figure > * {
+    display: inline-block;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: .6rem;
+  }
+}
+
+.writing {
+  margin-top: $margin-top;
+}
+
+.connect {
+  margin-top: $margin-top;
+}
