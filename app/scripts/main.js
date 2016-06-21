@@ -15,14 +15,15 @@ var route = function() {
 
   var destination = location.hash;
 
-  if (destination.includes('tidbits')) {
+  if (destination.indexOf('tidbits') > -1) {
     projects.classList.add('active');
-    window.setTimeout(function() {
-      toggleClass(tidbits, true);
-    }, 180);
+    // window.setTimeout(function() {
+    //   toggleClass(tidbits, true);
+    // }, 180);
+    tidbits.classList.add('active');
   }
 
-  else if (destination.includes('projects')){
+  else if (destination.indexOf('projects') > -1){
     if (tidbits.classList.contains('active')) {
       tidbits.classList.remove('active');
     }
