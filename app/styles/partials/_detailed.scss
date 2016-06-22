@@ -5,6 +5,7 @@
 .tidbits {
   margin: 6vh auto 0 auto;
   max-width: $max-width;
+  overflow-x: hidden;
   width: 80%;
 
   img {
@@ -15,6 +16,20 @@
 .content {
   margin-top: $margin-top;
   margin-bottom: $margin-top;
+
+  img {
+    position: relative;
+  }
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .content img {
+    left: calc(-50vw + 50%);
+    position: relative;
+    width: 100vw;
+  }
 }
 
 .overview,
@@ -30,4 +45,15 @@
 
 .description {
   width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .overview {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .description {
+    width: 100%;
+  }
 }
