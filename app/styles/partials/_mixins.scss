@@ -12,29 +12,30 @@
 
 @mixin article($level){
   @if $level == 1 {
-    transform: translateX(0);
     z-index: 1;
   }
 
   @else if $level == 2 {
-    transform: translateX(100%);
-    z-index: 10;
+    opacity: 0;
+    z-index: -10;
 
     &.active {
-      transform: translateX(0);
-      transition: -webkit-transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-      transition: transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      opacity: 1;
+      transition: opacity .5s cubic-bezier(0.465, 0.183, 0.153, 0.946) .4s,
+                  z-index .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      z-index: 10;
     }
   }
 
   @else {
-    transform: translateX(100%);
-    z-index: 100;
+    opacity: 1;
+    z-index: -100;
 
     &.active {
-      transform: translateX(0);
-      transition: -webkit-transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946) .18s;
-      transition: transform .5s cubic-bezier(0.465, 0.183, 0.153, 0.946) .18s;
+      opacity: 1;
+      transition: opacity .5s cubic-bezier(0.465, 0.183, 0.153, 0.946) .4s,
+                  z-index .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      z-index: 100;
     }
   }
 }
