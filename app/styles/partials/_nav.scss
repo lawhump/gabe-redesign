@@ -1,0 +1,13 @@
+.bio-breadcrumbs {
+  width: 100%;
+}
+
+.tidbits-breadcrumbs {
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .tidbits-breadcrumbs {
+    margin: 0 auto;
+  }
+}
