@@ -1,15 +1,15 @@
 'use strict';
 
 var bio = document.querySelector('.bio-wrapper');
-var tidbits = document.querySelector('.tidbits-wrapper');
+var caravan = document.querySelector('.caravan-wrapper');
 // Change the name accordingly, then uncomment
 var PROJECTNAME;
 // PROJECTNAME = document.querySelector('.PROJECT-NAME-wrapper');
 
 var route = function() {
   var destination = location.hash;
-  if (destination.indexOf('tidbits') > -1) {
-    tidbits.classList.add('active');
+  if (destination.indexOf('caravan') > -1) {
+    caravan.classList.add('active');
   }
 
   else if (destination.indexOf('bio') > -1) {
@@ -21,7 +21,7 @@ var route = function() {
   }
 
   else {
-    tidbits.classList.remove('active');
+    caravan.classList.remove('active');
     bio.classList.remove('active');
     // Change name accordingly then uncomment
     // PROJECTNAME.classList.add('active');
