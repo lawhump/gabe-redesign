@@ -72,6 +72,10 @@ figcaption {
 
 figcaption {
   margin-left: .2rem;
+
+  a {
+    font-weight: $font-weight-light;
+  }
 }
 
 article {
