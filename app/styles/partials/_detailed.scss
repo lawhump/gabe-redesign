@@ -2,7 +2,7 @@
   @include article(3);
 }
 
-.caravan {
+.project-details {
   margin: 6vh auto 0 auto;
   max-width: $max-width;
   overflow-x: hidden;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 980px){
-  .caravan {
+  .project-details {
     max-width: none;
     width: 100%;
   }
